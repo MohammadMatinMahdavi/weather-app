@@ -97,7 +97,7 @@ import label from "../assets/images/Label.png"
 import label2 from "../assets/images/Label (1).png";
 import hone from "../assets/images/Moon-cloud-mid-rain.png";
 import htwo from "../assets/images/Moon-cloud-fast-wind.png";
-import plus from "../assets/images/button.png";
+import plus from "../assets/images/Button.png";
 import symbol from "../assets/images/Symbol.png";
 import symbol2 from "../assets/images/Symbol (1).png";
 import wone from "../assets/images/sun and rain.png"
