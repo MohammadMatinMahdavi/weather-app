@@ -95,8 +95,8 @@ import ellipse from "../assets/images/Ellipse 2 (1).png";
 import ellipse2 from "../assets/images/Ellipse 3 (1).png";
 import label from "../assets/images/Label.png"
 import label2 from "../assets/images/Label (1).png";
-import hone from "../assets/images/moon-cloud-mid-rain.png";
-import htwo from "../assets/images/moon-cloud-fast-wind.png";
+import hone from "../assets/images/Moon-cloud-mid-rain.png";
+import htwo from "../assets/images/Moon-cloud-fast-wind.png";
 import plus from "../assets/images/button.png";
 import symbol from "../assets/images/Symbol.png";
 import symbol2 from "../assets/images/Symbol (1).png";
