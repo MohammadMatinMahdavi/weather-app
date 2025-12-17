@@ -35,7 +35,7 @@
 </div>
 </template>
 <script setup>
-import signal from "../assets/images/Mobile signal.png";
+import signal from "../assets/images/Mobile-signal.png";
 import wifi from "../assets/images/Wifi.png";
 import battery from "../assets/images/Battery.png";
 import back from "../assets/images/chevron.left.png";
