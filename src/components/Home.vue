@@ -4,7 +4,7 @@
 <img class=" absolute top-[100px]" :src="weather" alt="">
   <img class="h-[390px] w-[390px] absolute top-[304px] px-[8px] py-[16px] object-cover" :src="house">
   <div  class="down absolute top-[520px] ">
-   <div :class="menuclass" class="test w-[385px] relative flex flex-col gap-4 bg-purple-900/60 backdrop-blur-md rounded-[50px] overflow-y-auto h-[700px] no-scrollbar duration-500">
+   <div :class="menuclass"  class="test w-[385px] relative flex flex-col gap-4 bg-purple-900/60 backdrop-blur-md overflow-y-auto  no-scrollbar duration-500">
    <div class="h-[850px] w-[390px] overflow-y-scroll">
     <Header v-if="menuSituation === 'open' "/>
     <div v-if="menuSituation === 'open' " class="flex justify-center items-center flex-col gap-2 my-3">
@@ -150,8 +150,8 @@ function changeToWeekly() {
 const menuSituation = ref('halfOpen')
 const menuclass = computed(() => ({
   '-translate-y-[520px] h-[1300px] rounded-[0px]' : menuSituation.value === 'open',
-  'translate-y-[150px]' : menuSituation.value === 'notOpen',
-  '' : menuSituation.value === 'halfOpen',
+  'translate-y-[150px] ' : menuSituation.value === 'notOpen',
+  'h-[700px] rounded-[50px]' : menuSituation.value === 'halfOpen',
 }))
 const topclass = computed(()=> ({
   'hidden' : menuSituation.value === 'open',
