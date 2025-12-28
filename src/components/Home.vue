@@ -5,8 +5,8 @@
 <img class=" absolute top-[100px]" :src="weather" alt="">
   <img class="h-[390px] w-[390px] absolute top-[304px] px-[8px] py-[16px] object-cover" :src="house">
   <div  class="down absolute top-[520px] ">
-   <div :class="menuclass"  class="test w-[380px] md:w-[395px] relative flex flex-col gap-4 bg-purple-900/60 backdrop-blur-md overflow-y-auto  no-scrollbar duration-500">
-   <div class="h-[850px] w-[390px] overflow-y-scroll">
+   <div :class="menuclass"  class="test w-[400px] md:w-[395px] relative flex flex-col gap-4 bg-purple-900/60 backdrop-blur-md overflow-y-auto  no-scrollbar duration-500">
+   <div class="h-[850px] w-[400px] overflow-y-scroll">
     <Header v-if="menuSituation === 'open' "/>
     <div v-if="menuSituation === 'open' " class="flex justify-center items-center flex-col gap-2 my-3">
       <div class="text-white text-4xl">Montreal</div>
@@ -70,12 +70,12 @@
    class="menu h-[100px] w-[420px]  absolute top-[240px] duration-300 md:w-[600px] -left-[10px] md:left-0">
     <div class=" relative">
       <div class="bg-purple-900  h-[100px] md:w-[710px] md:h-[100px] md:absolute right-[40px] md:right-[50px] flex justify-center">
-          <img :src="symbol" alt="" class="absolute top-[35px] left-[35px] md:left-[165px]" >
+          <img :src="symbol" alt="" class="absolute top-[35px] left-[60px] md:left-[165px]" >
           <router-link to="/weather">
           <img  :src="symbol2" alt="" class="absolute top-[35px] left-[320px] md:left-[510px]">
           </router-link>
-          <img :src="subtract" alt="" class=" absolute top-[-12px] left-14 md:left-[225px]">
-          <img :src="plus" alt="" class="absolute top-[-12px] left-[130px] md:left-[300px]">
+          <img :src="subtract" alt="" class=" absolute top-[-12px] left-[70px] md:left-[225px]">
+          <img :src="plus" alt="" class="absolute top-[-12px] left-[145px] md:left-[300px]">
           </div>
     </div>
     </div>
