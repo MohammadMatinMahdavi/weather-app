@@ -1,6 +1,6 @@
 <template>
-<div class=" w-[390px] h-[844px] md:w-[700px] bg-gradient-to-b from-indigo-950 to-purple-900 flex flex-col gap-5 text-white pt-5 mx-[40px] ">
-    <div class="text-white w-[390px] md:w-[700px] z h-[47px]  rounded-md flex gap-[180px] md:gap-[510px] items-center px-10">
+<div class=" w-[410px] h-[844px] md:w-[700px] bg-gradient-to-b from-indigo-950 to-purple-900 flex flex-col gap-5 text-white pt-5  ">
+    <div class="text-white w-[390px] md:w-[700px]  h-[47px]  rounded-md flex gap-[180px] md:gap-[510px] items-center px-10">
   <div class="w-[54px] h-[21px] ">1:41</div>
   <div class="w-[88px] h-[13px] flex gap-2 md:w-full">
     <img  :src="signal" alt="">
