@@ -1,10 +1,11 @@
 <template>
-<div  class=" bg-center h-[844px] w-[440px] relative overflow-hidden mb-60" :style="{backgroundImage : `url(${bgImage})`}">
+<div  class=" bg-center  h-[850px] md:w-[700px] min-w-[420px] flex justify-center relative overflow-hidden " :style="{backgroundImage : `url(${bgImage})`}" >
+  
 <Header/>
 <img class=" absolute top-[100px]" :src="weather" alt="">
   <img class="h-[390px] w-[390px] absolute top-[304px] px-[8px] py-[16px] object-cover" :src="house">
   <div  class="down absolute top-[520px] ">
-   <div :class="menuclass"  class="test w-[385px] relative flex flex-col gap-4 bg-purple-900/60 backdrop-blur-md overflow-y-auto  no-scrollbar duration-500">
+   <div :class="menuclass"  class="test w-[380px] md:w-[395px] relative flex flex-col gap-4 bg-purple-900/60 backdrop-blur-md overflow-y-auto  no-scrollbar duration-500">
    <div class="h-[850px] w-[390px] overflow-y-scroll">
     <Header v-if="menuSituation === 'open' "/>
     <div v-if="menuSituation === 'open' " class="flex justify-center items-center flex-col gap-2 my-3">
@@ -66,20 +67,24 @@
    </div>
    <div 
    :class="menub" 
-   class="menu h-[100px] w-[385px] absolute top-[250px] duration-300">
+   class="menu h-[100px] w-[420px]  absolute top-[240px] duration-300 md:w-[600px] -left-[10px] md:left-0">
     <div class=" relative">
-        <img :src="rect" alt="" class=" h-full">
-          <img :src="symbol" alt="" class="absolute top-[35px] left-[40px]" >
+      <div class="bg-purple-900  h-[100px] md:w-[710px] md:h-[100px] md:absolute right-[40px] md:right-[50px] flex justify-center">
+          <img :src="symbol" alt="" class="absolute top-[35px] left-[35px] md:left-[165px]" >
           <router-link to="/weather">
-          <img  :src="symbol2" alt="" class="absolute top-[35px] left-[320px]">
+          <img  :src="symbol2" alt="" class="absolute top-[35px] left-[320px] md:left-[510px]">
           </router-link>
-          <img :src="subtract" alt="" class=" absolute top-[-12px] left-14">
-          <img :src="plus" alt="" class="absolute top-[-12px] left-[130px]">
+          <img :src="subtract" alt="" class=" absolute top-[-12px] left-14 md:left-[225px]">
+          <img :src="plus" alt="" class="absolute top-[-12px] left-[130px] md:left-[300px]">
+          </div>
     </div>
     </div>
   </div>
 </div>
 </template>
+<style>
+    
+</style>
 <script setup>
 import { computed, ref } from "vue";
 import bgImage from "../assets/images/background.jpg";
